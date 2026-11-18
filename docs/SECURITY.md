@@ -1,6 +1,6 @@
 # Security Policy
 
-This document outlines security procedures and general policies for **PRANAV PYQ FETCHER AMRITA**.
+This document outlines security procedures and general policies for **AMRITA PYQ FETCHER**.
 
 ## Supported Versions
 

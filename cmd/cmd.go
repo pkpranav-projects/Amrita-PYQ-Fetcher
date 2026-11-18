@@ -17,9 +17,9 @@ import (
 )
 
 var Cmd = &cobra.Command{
-	Use:   "pranav-pyq",
-	Short: "PRANAV PYQ FETCHER AMRITA",
-	Long:  `PRANAV PYQ FETCHER AMRITA - An interactive CLI application to access Amrita University's digital repository for previous year question papers.`,
+	Use:   "amrita-pyq",
+	Short: "AMRITA PYQ FETCHER",
+	Long:  `AMRITA PYQ FETCHER - An interactive CLI application to access Amrita University's digital repository for previous year question papers.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Print(configs.LogoStyle.Render(logo.LOGO_ASCII))
 

@@ -61,7 +61,7 @@ func (d DefaultWebClient) OpenBrowser(url string) error {
 		htmlContent := fmt.Sprintf(`<!DOCTYPE html>
 <html>
 <head>
-    <title>PRANAV PYQ FETCHER AMRITA - Demo Preview</title>
+    <title>AMRITA PYQ FETCHER - Demo Preview</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 40px; }
         .card { background: #1e293b; border-radius: 12px; padding: 32px; max-width: 700px; margin: 0 auto; box-shadow: 0 10px 25px rgba(0,0,0,0.5); border: 1px solid #334155; }
@@ -74,7 +74,7 @@ func (d DefaultWebClient) OpenBrowser(url string) error {
 <body>
     <div class="card">
         <span class="badge">OFFLINE DEMO MODE</span>
-        <h1>PRANAV PYQ FETCHER AMRITA</h1>
+        <h1>AMRITA PYQ FETCHER</h1>
         <p>This is a simulated question paper preview viewed while not connected to Amrita campus Wi-Fi.</p>
         <div class="info">
             <strong>Target Resource:</strong> %s<br>
@@ -110,7 +110,7 @@ func (d DefaultWebClient) OpenBrowser(url string) error {
 
 // createDemoPDF generates a syntactically valid PDF 1.4 document containing the offline demo notice.
 func createDemoPDF(filename, targetURL string) error {
-	streamContent := fmt.Sprintf("BT\n/F1 18 Tf\n50 720 Td\n(PRANAV PYQ FETCHER AMRITA) Tj\n/F1 12 Tf\n0 -30 Td\n(Offline Demo Mode - Simulated Question Paper) Tj\n0 -25 Td\n(Connect to Amrita campus Wi-Fi or VPN to download live PDFs.) Tj\nET\n")
+	streamContent := fmt.Sprintf("BT\n/F1 18 Tf\n50 720 Td\n(AMRITA PYQ FETCHER) Tj\n/F1 12 Tf\n0 -30 Td\n(Offline Demo Mode - Simulated Question Paper) Tj\n0 -25 Td\n(Connect to Amrita campus Wi-Fi or VPN to download live PDFs.) Tj\nET\n")
 
 	pdfContent := fmt.Sprintf("%%PDF-1.4\n"+
 		"1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n"+

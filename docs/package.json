@@ -1,6 +1,6 @@
 {
-    "name": "pranav_pyq_fetcher_amrita_docs",
-    "description": "PRANAV PYQ FETCHER AMRITA Documentation Website",
+    "name": "amrita_pyq_fetcher_docs",
+    "description": "AMRITA PYQ FETCHER Documentation Website",
     "version": "2.0.0",
     "type": "module",
     "scripts": {

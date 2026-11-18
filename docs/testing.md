@@ -1,4 +1,4 @@
-# Running Unit Tests for PRANAV PYQ FETCHER AMRITA
+# Running Unit Tests for AMRITA PYQ FETCHER
 
 ## Run Unit Tests
 

@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-    name: PRANAV PYQ FETCHER
+    name: AMRITA PYQ FETCHER
     text: Amrita University Question Paper Retrieval CLI
     tagline: An ultra-fast, keyboard-driven terminal application to browse, preview, and download university exam papers.
     image:
@@ -37,7 +37,7 @@ hero:
 
 ## Terminal-First Architecture
 
-Navigating university web portals right before exams shouldn't be stressful. **PRANAV PYQ FETCHER AMRITA** turns the slow, multi-click process of navigating the DSpace archive into an intuitive, keyboard-first terminal workflow.
+Navigating university web portals right before exams shouldn't be stressful. **AMRITA PYQ FETCHER** turns the slow, multi-click process of navigating the DSpace archive into an intuitive, keyboard-first terminal workflow.
 
 ### Network Connectivity Matrix
 

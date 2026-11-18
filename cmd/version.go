@@ -10,9 +10,9 @@ func init() {
 
 var versionCmd = &cobra.Command{
 	Use:   "version",
-	Short: "Print the version number of pranav-pyq",
-	Long:  `Displays version of PRANAV PYQ FETCHER AMRITA installed on the system.`,
+	Short: "Print the version number of amrita-pyq",
+	Long:  `Displays version of AMRITA PYQ FETCHER installed on the system.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		cmd.Println("PRANAV PYQ FETCHER AMRITA v2.0.0")
+		cmd.Println("AMRITA PYQ FETCHER v2.0.0")
 	},
 }

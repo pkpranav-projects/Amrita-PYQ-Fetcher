@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
     base: "/PRANAV-PYQ-FETCHER-AMRITA/",
-    title: "PRANAV PYQ FETCHER AMRITA",
-    titleTemplate: ":title | PRANAV PYQ FETCHER AMRITA",
+    title: "AMRITA PYQ FETCHER",
+    titleTemplate: ":title | AMRITA PYQ FETCHER",
     description: "An interactive Terminal CLI tool for accessing Amrita University PYQs.",
     cleanUrls: true,
 

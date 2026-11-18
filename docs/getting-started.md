@@ -1,8 +1,8 @@
-# Getting Started with PRANAV PYQ FETCHER AMRITA
+# Getting Started with AMRITA PYQ FETCHER
 
 ## Introduction
 
-Welcome to **PRANAV PYQ FETCHER AMRITA**! This command-line interface (CLI) application simplifies accessing previous year question papers (PYQs) from Amrita University. It fetches, displays, and downloads question papers directly from your terminal, making exam prep fast and easy.
+Welcome to **AMRITA PYQ FETCHER**! This command-line interface (CLI) application simplifies accessing previous year question papers (PYQs) from Amrita University. It fetches, displays, and downloads question papers directly from your terminal, making exam prep fast and easy.
 
 ## Prerequisites
 

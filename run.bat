@@ -1,5 +1,5 @@
 @echo off
-title PRANAV PYQ FETCHER AMRITA
+title AMRITA PYQ FETCHER
 cd /d "%~dp0"
-pranav-pyq.exe
+amrita-pyq.exe
 pause

@@ -13,11 +13,11 @@ func TestRoot(t *testing.T) {
 		t.Errorf("RootCmd is not of type *cobra.Command")
 	}
 
-	if Cmd.Use != "pranav-pyq" {
-		t.Errorf("Expected Use: 'pranav-pyq', Got: %v", Cmd.Use)
+	if Cmd.Use != "amrita-pyq" {
+		t.Errorf("Expected Use: 'amrita-pyq', Got: %v", Cmd.Use)
 	}
 
-	if Cmd.Short != "PRANAV PYQ FETCHER AMRITA" {
-		t.Errorf("Expected Short: 'PRANAV PYQ FETCHER AMRITA', Got: %v", Cmd.Short)
+	if Cmd.Short != "AMRITA PYQ FETCHER" {
+		t.Errorf("Expected Short: 'AMRITA PYQ FETCHER', Got: %v", Cmd.Short)
 	}
 }

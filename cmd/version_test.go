@@ -11,7 +11,7 @@ func TestVersionCmd(t *testing.T) {
 	versionCmd.SetOut(&buf)
 	versionCmd.SetErr(&buf)
 	versionCmd.Run(versionCmd, nil)
-	if !strings.Contains(buf.String(), "PRANAV PYQ FETCHER AMRITA v2.0.0") {
-		t.Errorf("got %q, want it to contain PRANAV PYQ FETCHER AMRITA v2.0.0", buf.String())
+	if !strings.Contains(buf.String(), "AMRITA PYQ FETCHER v2.0.0") {
+		t.Errorf("got %q, want it to contain AMRITA PYQ FETCHER v2.0.0", buf.String())
 	}
 }
