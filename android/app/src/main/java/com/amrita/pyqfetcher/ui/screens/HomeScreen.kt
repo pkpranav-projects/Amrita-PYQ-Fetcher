@@ -1,6 +1,5 @@
 package com.amrita.pyqfetcher.ui.screens
 
-import androidx.compose.animation.core.animateFloat
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -143,8 +142,8 @@ fun HomeScreen(
             item {
                 Row(Modifier.padding(start = 4.dp, bottom = 4.dp), verticalAlignment = Alignment.CenterVertically) {
                     Column(Modifier.weight(1f)) {
-                        Text("Amrita PYQ", style = MaterialTheme.typography.titleLarge)
-                        Byline()
+                        Text("Amrita PYQ Fetcher", style = MaterialTheme.typography.titleLarge)
+                        Text("By P K PRANAV", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
                     ConnectionPill(mode, conn, onConnection)
                 }
@@ -263,45 +262,3 @@ fun HomeScreen(
     }
 }
 
-/**
- * The author's signature, written like a shell session: the command types itself out once,
- * then the cursor keeps blinking.
- */
-@Composable
-private fun Byline() {
-    val prompt = "~\$ whoami"
-    val answer = "P K PRANAV · CYS"
-    var typed by androidx.compose.runtime.saveable.rememberSaveable { mutableIntStateOf(0) }
-    androidx.compose.runtime.LaunchedEffect(Unit) {
-        while (typed < prompt.length + answer.length) {
-            kotlinx.coroutines.delay(if (typed == prompt.length) 350 else 45)
-            typed++
-        }
-    }
-    val blink by androidx.compose.animation.core.rememberInfiniteTransition(label = "cursor").animateFloat(
-        initialValue = 1f, targetValue = 0f,
-        animationSpec = androidx.compose.animation.core.infiniteRepeatable(
-            androidx.compose.animation.core.tween(530, easing = androidx.compose.animation.core.LinearEasing),
-            androidx.compose.animation.core.RepeatMode.Reverse,
-        ),
-        label = "blink",
-    )
-    val c = MaterialTheme.colorScheme
-    val mono = MaterialTheme.typography.labelMedium.copy(fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace)
-    val text = androidx.compose.ui.text.buildAnnotatedString {
-        val shownPrompt = prompt.take(typed)
-        pushStyle(androidx.compose.ui.text.SpanStyle(color = c.onSurfaceVariant))
-        append(shownPrompt)
-        pop()
-        if (typed > prompt.length) {
-            append("  ")
-            pushStyle(androidx.compose.ui.text.SpanStyle(color = c.primary, fontWeight = androidx.compose.ui.text.font.FontWeight.SemiBold))
-            append(answer.take(typed - prompt.length))
-            pop()
-        }
-    }
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        Text(text, style = mono, maxLines = 1)
-        Text("▌", style = mono, color = c.primary.copy(alpha = blink))
-    }
-}
