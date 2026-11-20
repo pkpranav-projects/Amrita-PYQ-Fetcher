@@ -1,10 +1,10 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-    base: "/PRANAV-PYQ-FETCHER-AMRITA/",
+    base: "/Amrita-PYQ-Fetcher/",
     title: "AMRITA PYQ FETCHER",
     titleTemplate: ":title | AMRITA PYQ FETCHER",
-    description: "An interactive Terminal CLI tool for accessing Amrita University PYQs.",
+    description: "An interactive Terminal CLI and Android App suite for accessing Amrita University PYQs.",
     cleanUrls: true,
 
     themeConfig: {
@@ -28,7 +28,7 @@ export default defineConfig({
         socialLinks: [
             {
                 icon: "github",
-                link: "https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA",
+                link: "https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher",
             },
         ],
     },

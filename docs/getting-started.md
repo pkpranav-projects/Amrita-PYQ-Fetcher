@@ -10,22 +10,22 @@ Welcome to **AMRITA PYQ FETCHER**! This command-line interface (CLI) application
   - For live question papers: Connect to **Amrita WiFi** or use **Amrita VPN**.
   - For offline exploration: **Offline Demo Mode** is built-in and works anywhere without network requirements!
 - **Development Environment** (if running from source):
-  - **Golang** (1.23+) installed on your system.
-  - Or simply run the pre-built `pranav-pyq.exe` / `run.bat` on Windows!
+  - **Golang** (1.22+) installed on your system.
+  - Or simply run the pre-built `amrita-pyq.exe` / `run.bat` on Windows!
 
 ## Installation & Running
 
 ### Option 1: One-Click Run (Windows)
 Double-click `run.bat` in the project root directory, or execute in PowerShell:
 ```powershell
-.\pranav-pyq.exe
+.\amrita-pyq.exe
 ```
 
 ### Option 2: Run from Source
 Clone the repository and run:
 ```sh
-git clone https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA.git
-cd PRANAV-PYQ-FETCHER-AMRITA
+git clone https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher.git
+cd Amrita-PYQ-Fetcher
 go run main.go
 ```
 

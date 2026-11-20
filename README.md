@@ -10,9 +10,9 @@
 
   <!-- Badges Shelf -->
   <p align="center">
-    <a href="https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/latest"><img src="https://img.shields.io/github/v/release/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA?style=for-the-badge&logo=github&color=8B5CF6" alt="Latest Release" /></a>
-    <a href="https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases"><img src="https://img.shields.io/github/downloads/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/total?style=for-the-badge&color=10B981&logo=github" alt="Downloads" /></a>
-    <a href="https://pkpranav-projects.github.io/PRANAV-PYQ-FETCHER-AMRITA/"><img src="https://img.shields.io/badge/Docs-Live%20Site-00ADD8?style=for-the-badge&logo=rocket" alt="Docs Site" /></a>
+    <a href="https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/latest"><img src="https://img.shields.io/github/v/release/pkpranav-projects/Amrita-PYQ-Fetcher?style=for-the-badge&logo=github&color=8B5CF6" alt="Latest Release" /></a>
+    <a href="https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases"><img src="https://img.shields.io/github/downloads/pkpranav-projects/Amrita-PYQ-Fetcher/total?style=for-the-badge&color=10B981&logo=github" alt="Downloads" /></a>
+    <a href="https://pkpranav-projects.github.io/Amrita-PYQ-Fetcher/"><img src="https://img.shields.io/badge/Docs-Live%20Site-00ADD8?style=for-the-badge&logo=rocket" alt="Docs Site" /></a>
     <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android-5865F2?style=for-the-badge&logo=android&logoColor=white" alt="Cross Platform" />
     <img src="https://img.shields.io/badge/Campus%20Network-Amrita%20Wi--Fi%20%7C%20VPN-A81D37?style=for-the-badge&logo=target&logoColor=white" alt="Campus Network" />
     <img src="https://img.shields.io/badge/Offline%20Mode-Built--in%20%E2%9A%A1-F59E0B?style=for-the-badge&logo=powershell&logoColor=white" alt="Offline Mode" />
@@ -97,13 +97,13 @@ Pre-compiled, ready-to-run desktop releases are available for Windows, Linux, an
 
 | Platform | Architecture | Package | Quick Launch |
 |:---|:---:|:---|:---|
-| 🪟 **Windows** | x86_64 / amd64 | [**`pranav-pyq-v2.0.0-windows-amd64.zip`**](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-windows-amd64.zip) | Extract and double-click `run.bat` |
-| 🐧 **Linux** | x86_64 / amd64 | [**`pranav-pyq-v2.0.0-linux-amd64.tar.gz`**](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-linux-amd64.tar.gz) | `tar -xzf ...` & `./pranav-pyq` |
-| 🍎 **macOS** | Apple Silicon (M1–M4) | [**`pranav-pyq-v2.0.0-darwin-arm64.tar.gz`**](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-darwin-arm64.tar.gz) | `tar -xzf ...` & `./pranav-pyq` |
-| 🍎 **macOS** | Intel x86_64 | [**`pranav-pyq-v2.0.0-darwin-amd64.tar.gz`**](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-darwin-amd64.tar.gz) | `tar -xzf ...` & `./pranav-pyq` |
+| 🪟 **Windows** | x86_64 / amd64 | [**`amrita-pyq-v2.0.0-windows-amd64.zip`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-windows-amd64.zip) | Extract and double-click `run.bat` |
+| 🐧 **Linux** | x86_64 / amd64 | [**`amrita-pyq-v2.0.0-linux-amd64.tar.gz`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-linux-amd64.tar.gz) | `tar -xzf ...` & `./amrita-pyq` |
+| 🍎 **macOS** | Apple Silicon (M1–M4) | [**`amrita-pyq-v2.0.0-darwin-arm64.tar.gz`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-darwin-arm64.tar.gz) | `tar -xzf ...` & `./amrita-pyq` |
+| 🍎 **macOS** | Intel x86_64 | [**`amrita-pyq-v2.0.0-darwin-amd64.tar.gz`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-darwin-amd64.tar.gz) | `tar -xzf ...` & `./amrita-pyq` |
 | 📱 **Android** | arm64-v8a / armeabi-v7a / x86_64 | Build from `android/` | `./gradlew assembleDebug` |
 
-👉 View all releases and notes on the [**GitHub Releases Page**](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases).
+👉 View all releases and notes on the [**GitHub Releases Page**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases).
 
 ---
 
@@ -175,14 +175,14 @@ flowchart TD
 
 ```bash
 # Clone the repository
-git clone https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA.git
-cd PRANAV-PYQ-FETCHER-AMRITA
+git clone https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher.git
+cd Amrita-PYQ-Fetcher
 
 # Run directly
 go run main.go
 
 # Build production binary
-go build -ldflags="-s -w" -o pranav-pyq.exe main.go
+go build -ldflags="-s -w" -o amrita-pyq.exe main.go
 ```
 
 ### 2. Android Application (Kotlin)
@@ -226,7 +226,7 @@ cd android
 **P K Pranav**  
 * GitHub: [@pkpranav-projects](https://github.com/pkpranav-projects)  
 * Email: [pk.pranav7685@gmail.com](mailto:pk.pranav7685@gmail.com)  
-* Repository: [PRANAV-PYQ-FETCHER-AMRITA](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA)
+* Repository: [Amrita-PYQ-Fetcher](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher)
 
 *Original base project by Amrita CSE-25 community.*
 

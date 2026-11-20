@@ -14,10 +14,10 @@ hero:
           link: /getting-started
         - theme: alt
           text: Releases & Binaries
-          link: https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases
+          link: https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases
         - theme: alt
           text: GitHub Repository
-          link: https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA
+          link: https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher
 ---
 
 <div class="custom-home-content">
@@ -55,10 +55,10 @@ Because `dspace.amritanet.edu` is hosted on Amrita's private internal intranet, 
 
 Pre-compiled, ready-to-run releases are available for Windows, Linux, and macOS without requiring any Go installation:
 
-- **Windows 64-bit:** [Download ZIP (v2.0.0)](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-windows-amd64.zip) &mdash; *Includes `run.bat` for one-click launch*
-- **Linux 64-bit:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-linux-amd64.tar.gz)
-- **macOS Apple Silicon:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-darwin-arm64.tar.gz)
-- **macOS Intel:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/PRANAV-PYQ-FETCHER-AMRITA/releases/download/v2.0.0/pranav-pyq-v2.0.0-darwin-amd64.tar.gz)
+- **Windows 64-bit:** [Download ZIP (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-windows-amd64.zip) &mdash; *Includes `run.bat` for one-click launch*
+- **Linux 64-bit:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-linux-amd64.tar.gz)
+- **macOS Apple Silicon:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-darwin-arm64.tar.gz)
+- **macOS Intel:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-darwin-amd64.tar.gz)
 
 ---
 
