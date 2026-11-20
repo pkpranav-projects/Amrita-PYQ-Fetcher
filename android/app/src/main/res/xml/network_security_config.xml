@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The Amrita DSpace repository is an intranet-only plain-HTTP server.
+  Cleartext is allowed ONLY for its two known hosts; every other host keeps the
+  platform default (HTTPS only).
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">dspace.amritanet.edu</domain>
+        <domain includeSubdomains="false">172.17.18.57</domain>
+    </domain-config>
+</network-security-config>

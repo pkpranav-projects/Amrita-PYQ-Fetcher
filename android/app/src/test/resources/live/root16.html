@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport" />
+<link rel="shortcut icon" href="/xmlui/themes/Mirage/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/xmlui/themes/Mirage/images/apple-touch-icon.png" />
+<meta name="Generator" content="DSpace 4.2" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/reset.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/base.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/helper.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/jquery-ui-1.8.15.custom.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/authority-control.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="/xmlui/themes/Mirage/lib/css/handheld.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/xmlui/themes/Mirage/lib/css/print.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/xmlui/themes/Mirage/lib/css/media.css" />
+<link type="application/rss+xml" rel="alternate" href="/xmlui/feed/rss_1.0/123456789/16" />
+<link type="application/rss+xml" rel="alternate" href="/xmlui/feed/rss_2.0/123456789/16" />
+<link type="application/atom+xml" rel="alternate" href="/xmlui/feed/atom_1.0/123456789/16" />
+<link type="application/opensearchdescription+xml" rel="search" href="http://dspace.amritanet.edu:8080/xmlui/open-search/description.xml" title="DSpace" />
+<script type="text/javascript">
+                                //Clear default text of empty text areas on focus
+                                function tFocus(element)
+                                {
+                                        if (element.value == ' '){element.value='';}
+                                }
+                                //Clear default text of empty text areas on submit
+                                function tSubmit(form)
+                                {
+                                        var defaultedElements = document.getElementsByTagName("textarea");
+                                        for (var i=0; i != defaultedElements.length; i++){
+                                                if (defaultedElements[i].value == ' '){
+                                                        defaultedElements[i].value='';}}
+                                }
+                                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                                function disableEnterKey(e)
+                                {
+                                     var key;
+
+                                     if(window.event)
+                                          key = window.event.keyCode;     //Internet Explorer
+                                     else
+                                          key = e.which;     //Firefox and Netscape
+
+                                     if(key == 13)  //if "Enter" pressed, then disable!
+                                          return false;
+                                     else
+                                          return true;
+                                }
+
+                                function FnArray()
+                                {
+                                    this.funcs = new Array;
+                                }
+
+                                FnArray.prototype.add = function(f)
+                                {
+                                    if( typeof f!= "function" )
+                                    {
+                                        f = new Function(f);
+                                    }
+                                    this.funcs[this.funcs.length] = f;
+                                };
+
+                                FnArray.prototype.execute = function()
+                                {
+                                    for( var i=0; i < this.funcs.length; i++ )
+                                    {
+                                        this.funcs[i]();
+                                    }
+                                };
+
+                                var runAfterJSImports = new FnArray();
+            </script>
+<script xmlns:i18n="http://apache.org/cocoon/i18n/2.1" type="text/javascript" src="/xmlui/themes/Mirage/lib/js/modernizr-1.7.min.js"> </script>
+<title>Examination  Papers</title>
+</head><!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+                <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+                <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+                <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+                <!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="ds-main">
+<div id="ds-header-wrapper">
+<div class="clearfix" id="ds-header">
+<a id="ds-header-logo-link" href="/xmlui/">
+<span id="ds-header-logo"> </span>
+<span id="ds-header-logo-text">Amrita Institutional Repository</span>
+</a>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="pagetitle visuallyhidden">Examination  Papers</h1>
+<div id="ds-user-box">
+<p>
+<a href="/xmlui/login">Login</a>
+</p>
+</div>
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-trail-wrapper">
+<ul id="ds-trail">
+<li class="ds-trail-link first-link ">
+<a href="/xmlui/">Amrita Institutional Repository.</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-trail-arrow">→</li>
+<li class="ds-trail-link last-link">Examination  Papers</li>
+</ul>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div id="ds-content-wrapper">
+<div class="clearfix" id="ds-content">
+<div id="ds-body">
+<h1 class="ds-div-head">Examination  Papers</h1>
+<div id="aspect_artifactbrowser_CommunityViewer_div_community-home" class="ds-static-div primary repository community">
+<div id="aspect_artifactbrowser_CommunityViewer_div_community-search-browse" class="ds-static-div secondary search-browse">
+<div id="aspect_browseArtifacts_CommunityBrowse_div_community-browse" class="ds-static-div secondary browse">
+<h2 class="ds-head">Browse by</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_browseArtifacts_CommunityBrowse_list_community-browse" class="ds-simple-list community-browse">
+<li class="ds-simple-list-item">
+<a href="/xmlui/handle/123456789/16/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="/xmlui/handle/123456789/16/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="/xmlui/handle/123456789/16/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="/xmlui/handle/123456789/16/browse?type=subject">Subjects</a>
+</li>
+</ul>
+</div>
+<form xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_CommunitySearch_div_community-search" class="ds-interactive-div secondary search" action="/xmlui/handle/123456789/16/discover" method="post" onsubmit="javascript:tSubmit(this);">
+<p id="aspect_discovery_CommunitySearch_p_search-query" class="ds-paragraph">Search within this community and its collections: <input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://www.w3.org/1999/xhtml" id="aspect_discovery_CommunitySearch_field_query" class="ds-text-field" name="query" type="text" value="" /> <input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_discovery_CommunitySearch_field_submit" class="ds-button-field" name="submit" type="submit" value="Go" />
+</p>
+</form>
+</div>
+<div id="aspect_artifactbrowser_CommunityViewer_div_community-view" class="ds-static-div secondary">
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/16/mets.xml-->
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="detail-view"> 
+            
+            </div>
+<h2 class="ds-list-head">Sub-communities within this community</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom">
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/7161/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7161">
+<span class="Z3988">Agricultural Sciences</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/150/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/150">
+<span class="Z3988">B.Tech</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/892/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/892">
+<span class="Z3988">Communication</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/903/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/903">
+<span class="Z3988">Integrated MSc &amp; MA</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/331/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/331">
+<span class="Z3988">MCA</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/393/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/393">
+<span class="Z3988">MSW</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/279/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/279">
+<span class="Z3988">M.Tech</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/2417/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/2417">
+<span class="Z3988">PG</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/5948/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/5948">
+<span class="Z3988">PG Diploma in Waste Management and Environmental Hygiene</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/405/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/405">
+<span class="Z3988">PhD</span>
+</a>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/2414/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item community odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/2414">
+<span class="Z3988">UG</span>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<h2 class="ds-div-head">Recent Submissions</h2>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_CommunityRecentSubmissions_div_community-recent-submission" class="ds-static-div secondary recent-submission">
+<ul xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="ds-artifact-list">
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9714/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9714">Third Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9714&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc .Science</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9693/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9693">Third Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9693&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc. Mathematics</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9692/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9692">Third Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9692&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc.Data Science with Logistics and Supply Chain Management</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9691/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9691">Third Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9691&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc. Applied Statistics and Data Analytics</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9690/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9690">First Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9690&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc. Mathematics</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-09</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9689/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9689">First Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9689&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc .Science</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-09</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9688/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9688">First Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9688&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc.Data Science with Logistics and Supply Chain Management</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-09</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9687/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9687">First Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9687&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc. Applied Statistics and Data Analytics</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-09</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9686/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9686">Ninth Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9686&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9685/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9685">Seventh Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9685&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9684/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9684">Fifth Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9684&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9683/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9683">Third Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9683&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9682/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9682">First Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9682&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9681/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9681">Ph.D Course Work - Degree Examination Nov 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9681&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>PhD</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-11</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9680/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9680">Third Semester- 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9680&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc .Science</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9679/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9679">Third Semester- 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9679&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc. Mathematics</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9678/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9678">Third Semester- 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9678&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc.Data Science with Logistics and Supply Chain Management</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9677/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9677">Third Semester- 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9677&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc. Applied Statistics and Data Analytics</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9676/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9676">First Semester - 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9676&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc .Science</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/9675/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9675">First Semester - 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9675&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Sc. Mathematics</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+</ul>
+<p id="aspect_discovery_CommunityRecentSubmissions_p_recent-submission-view-more" class="ds-paragraph recentSubmissionViewMore">
+<a href="/xmlui/handle/123456789/16/recent-submissions">View more</a>
+</p>
+</div>
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-options-wrapper">
+<div id="ds-options">
+<h1 class="ds-option-set-head" id="ds-search-option-head">Search DSpace</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-search-option">
+<form method="post" id="ds-search-form" action="/xmlui/discover">
+<fieldset>
+<input type="text" class="ds-text-field " name="query" />
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" value="Go" type="submit" name="submit" class="ds-button-field " onclick="&#10;                                        var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);&#10;                                        if (radio != undefined &amp;&amp; radio.checked)&#10;                                        {&#10;                                        var form = document.getElementById(&quot;ds-search-form&quot;);&#10;                                        form.action=&#10;                                    &quot;/xmlui/handle/&quot; + radio.value + &quot;/discover&quot; ; &#10;                                        }&#10;                                    " />
+<label>
+<input checked="checked" value="" name="scope" type="radio" id="ds-search-form-scope-all" />Search DSpace</label>
+<br xmlns:i18n="http://apache.org/cocoon/i18n/2.1" />
+<label>
+<input name="scope" type="radio" id="ds-search-form-scope-container" value="123456789/16" />This Community</label>
+</fieldset>
+</form>
+<a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" href="/xmlui/discover">Advanced Search</a>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set-head">Browse</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_browse" class="ds-option-set">
+<ul class="ds-options-list">
+<li>
+<h2 class="ds-sublist-head">All of DSpace</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/community-list">Communities &amp; Collections</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=subject">Subjects</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<h2 class="ds-sublist-head">This Community</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/handle/123456789/16/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/handle/123456789/16/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/handle/123456789/16/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/handle/123456789/16/browse?type=subject">Subjects</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">My Account</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_account" class="ds-option-set">
+<ul class="ds-simple-list">
+<li>
+<a href="/xmlui/login">Login</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/register">Register</a>
+</li>
+</ul>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">Discover</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_Navigation_list_discovery" class="ds-option-set">
+<ul class="ds-options-list">
+<li>
+<h2 class="ds-sublist-head">Author</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Integrated+MSc+%26+MA">Integrated MSc &amp; MA (174)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=B.Tech">B.Tech (159)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=BA_ELL">BA_ELL (73)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=BA+Communicaiton">BA Communicaiton (71)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=MSW">MSW (67)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=M.Tech">M.Tech (64)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=B.Sc+Food+Science">B.Sc Food Science (41)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=MA_ELL">MA_ELL (40)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=MA+Communicaiton">MA Communicaiton (37)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=M.Sc.+Mathematics">M.Sc. Mathematics (26)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/search-filter?field=author">... View More</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<h2 class="ds-sublist-head">Subject</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=university+model+question+papers">university model question papers (12)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=previous+year+question+papers%2C+model+university+question+papers">previous year question papers, model university question papers (6)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=integrated+MSc+%26+MA">integrated MSc &amp; MA (5)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=ASCOM%2C+Mass+Communication">ASCOM, Mass Communication (4)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Fifth+semester">Fifth semester (4)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Fourth+semester">Fourth semester (4)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=university+model+questions+papers+--+mass+communication">university model questions papers -- mass communication (4)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=15ELL316+Autobiography">15ELL316 Autobiography (3)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=18CMJ111+Communication+Theories%2C+18CMJ112+Indian+Constitution+and+Media+Laws%2C+18CMJ120+Current+Affairs+Analysis+II">18CMJ111 Communication Theories, 18CMJ112 Indian Constitution and Media Laws, 18CMJ120 Current Affairs Analysis II (3)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=ASCOM%3B+Amrita+School+of+communication">ASCOM; Amrita School of communication (3)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/search-filter?field=subject">... View More</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<h2 class="ds-sublist-head">Date Issued</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2020+TO+2025%5D">2020 - 2025 (460)</a>
+</li>
+<li>
+<a href="/xmlui/handle/123456789/16/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2010+TO+2019%5D">2010 - 2019 (593)</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 class="ds-option-set-head" id="ds-feed-option-head">RSS Feeds</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-feed-option">
+<ul>
+<li>
+<a href="/xmlui/feed/rss_1.0/123456789/16" style="background: url(/xmlui/static/icons/feed.png) no-repeat">RSS 1.0</a>
+</li>
+<li>
+<a href="/xmlui/feed/rss_2.0/123456789/16" style="background: url(/xmlui/static/icons/feed.png) no-repeat">RSS 2.0</a>
+</li>
+<li>
+<a href="/xmlui/feed/atom_1.0/123456789/16" style="background: url(/xmlui/static/icons/feed.png) no-repeat">Atom</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div id="ds-footer-wrapper">
+<div id="ds-footer">
+<div id="ds-footer-left">
+<a target="_blank" href="http://www.dspace.org/">DSpace software</a> copyright © 2002-2012  <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>
+</div>
+<div id="ds-footer-right">
+<span class="theme-by">Theme by </span>
+<a id="ds-footer-logo-link" href="http://atmire.com" target="_blank" title="@mire NV">
+<span id="ds-footer-logo"> </span>
+</a>
+</div>
+<div id="ds-footer-links">
+<a href="/xmlui/contact">Contact Us</a> | <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" href="/xmlui/feedback">Send Feedback</a>
+</div>
+<a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="hidden" href="/xmlui/htmlmap"> </a>
+</div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"> </script>
+<script type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/xmlui/static/js/jquery-1.6.2.min.js"> <\/script>')</script>
+<script type="text/javascript" src="/xmlui/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js"> </script><!--[if lt IE 7 ]>
+<script type="text/javascript" src="/xmlui/themes/Mirage/lib/js/DD_belatedPNG_0.0.8a.js?v=1"> </script>
+<script type="text/javascript">DD_belatedPNG.fix('#ds-header-logo');DD_belatedPNG.fix('#ds-footer-logo');$.each($('img[src$=png]'), function() {DD_belatedPNG.fixPng(this);});</script><![endif]-->
+<script type="text/javascript">
+            runAfterJSImports.execute();
+        </script></body></html>

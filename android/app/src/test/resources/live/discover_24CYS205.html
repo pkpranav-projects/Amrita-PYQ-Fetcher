@@ -1,0 +1,1619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport" />
+<link rel="shortcut icon" href="/xmlui/themes/Mirage/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/xmlui/themes/Mirage/images/apple-touch-icon.png" />
+<meta name="Generator" content="DSpace 4.2" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/../../static/css/discovery/discovery-style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/reset.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/base.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/helper.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/jquery-ui-1.8.15.custom.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/xmlui/themes/Mirage/lib/css/authority-control.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="/xmlui/themes/Mirage/lib/css/handheld.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/xmlui/themes/Mirage/lib/css/print.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/xmlui/themes/Mirage/lib/css/media.css" />
+<link type="application/opensearchdescription+xml" rel="search" href="http://dspace.amritanet.edu:8080/xmlui/open-search/description.xml" title="DSpace" />
+<script type="text/javascript">
+                                //Clear default text of empty text areas on focus
+                                function tFocus(element)
+                                {
+                                        if (element.value == ' '){element.value='';}
+                                }
+                                //Clear default text of empty text areas on submit
+                                function tSubmit(form)
+                                {
+                                        var defaultedElements = document.getElementsByTagName("textarea");
+                                        for (var i=0; i != defaultedElements.length; i++){
+                                                if (defaultedElements[i].value == ' '){
+                                                        defaultedElements[i].value='';}}
+                                }
+                                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                                function disableEnterKey(e)
+                                {
+                                     var key;
+
+                                     if(window.event)
+                                          key = window.event.keyCode;     //Internet Explorer
+                                     else
+                                          key = e.which;     //Firefox and Netscape
+
+                                     if(key == 13)  //if "Enter" pressed, then disable!
+                                          return false;
+                                     else
+                                          return true;
+                                }
+
+                                function FnArray()
+                                {
+                                    this.funcs = new Array;
+                                }
+
+                                FnArray.prototype.add = function(f)
+                                {
+                                    if( typeof f!= "function" )
+                                    {
+                                        f = new Function(f);
+                                    }
+                                    this.funcs[this.funcs.length] = f;
+                                };
+
+                                FnArray.prototype.execute = function()
+                                {
+                                    for( var i=0; i < this.funcs.length; i++ )
+                                    {
+                                        this.funcs[i]();
+                                    }
+                                };
+
+                                var runAfterJSImports = new FnArray();
+            </script>
+<script xmlns:i18n="http://apache.org/cocoon/i18n/2.1" type="text/javascript" src="/xmlui/themes/Mirage/lib/js/modernizr-1.7.min.js"> </script>
+<title>Search</title>
+</head><!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+                <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+                <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+                <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+                <!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-main">
+<div id="ds-header-wrapper">
+<div class="clearfix" id="ds-header">
+<a id="ds-header-logo-link" href="/xmlui/">
+<span id="ds-header-logo"> </span>
+<span id="ds-header-logo-text">Amrita Institutional Repository</span>
+</a>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="pagetitle visuallyhidden">Search</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-user-box">
+<p>
+<a href="/xmlui/login">Login</a>
+</p>
+</div>
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-trail-wrapper">
+<ul id="ds-trail">
+<li class="ds-trail-link first-link ">
+<a href="/xmlui/">Amrita Institutional Repository.</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-trail-arrow">→</li>
+<li class="ds-trail-link last-link">Search</li>
+</ul>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div id="ds-content-wrapper">
+<div class="clearfix" id="ds-content">
+<div id="ds-body">
+<h1 class="ds-div-head">Search</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_div_search" class="ds-static-div primary">
+<p id="aspect_discovery_SimpleSearch_p_hidden-fields" class="ds-paragraph hidden">
+<input id="aspect_discovery_SimpleSearch_field_discovery-json-search-url" class="ds-hidden-field" name="discovery-json-search-url" type="hidden" value="http://dspace.amritanet.edu:8080/xmlui/JSON/discovery/search" />
+<input id="aspect_discovery_SimpleSearch_field_contextpath" class="ds-hidden-field" name="contextpath" type="hidden" value="/xmlui" />
+</p>
+<div id="aspect_discovery_SimpleSearch_div_discovery-search-box" class="ds-static-div discoverySearchBox">
+<form id="aspect_discovery_SimpleSearch_div_general-query" class="ds-interactive-div discover-search-box" action="discover" method="get" onsubmit="javascript:tSubmit(this);">
+<fieldset id="aspect_discovery_SimpleSearch_list_primary-search" class="ds-form-list">
+<ol>
+<li class="ds-form-item">
+<label class="ds-form-label" for="aspect_discovery_SimpleSearch_field_scope">Search:</label>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-form-content">
+<select id="aspect_discovery_SimpleSearch_field_scope" class="ds-select-field" name="scope">
+<option value="/" selected="selected">All of DSpace</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="123456789/17">Amrita@Media</option>
+<option value="123456789/117">Amrita Publications</option>
+<option value="123456789/1">Electronic Theses &amp; Dissertations</option>
+<option value="123456789/16">Examination  Papers</option>
+<option value="123456789/3870">Rare Collections</option>
+</select>
+</div>
+</li>
+<li class="ds-form-item">
+<div class="ds-form-content">
+<input id="aspect_discovery_SimpleSearch_field_query" class="ds-text-field" name="query" type="text" value="24CYS205" />
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_discovery_SimpleSearch_field_submit" class="ds-button-field search-icon" name="submit" type="submit" value="Go" />
+</div>
+</li>
+<li class="ds-form-item last">
+<div class="ds-form-content">
+<a href="display-filters">Add filters</a>
+</div>
+</li>
+</ol>
+</fieldset>
+<p xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_p_hidden-fields" class="ds-paragraph hidden">
+<input id="aspect_discovery_SimpleSearch_field_rpp" class="ds-hidden-field" name="rpp" type="hidden" value="50" />
+</p>
+</form>
+<form id="aspect_discovery_SimpleSearch_div_search-filters" class="ds-interactive-div discover-filters-box hidden" action="discover" method="get" onsubmit="javascript:tSubmit(this);">
+<h2 class="ds-div-head">Filters</h2>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_div_discovery-filters-wrapper" class="ds-static-div">
+<p class="ds-paragraph">Use filters to refine the search results.</p>
+<table xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_table_discovery-filters" class="ds-table discovery-filters">
+<tr id="aspect_discovery_SimpleSearch_row_filter-new-1" class="ds-table-row odd search-filter">
+<td id="aspect_discovery_SimpleSearch_cell_" class="ds-table-cell odd selection">
+<select id="aspect_discovery_SimpleSearch_field_filtertype_1" class="ds-select-field" name="filtertype_1">
+<option value="title">Title</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="author">Author</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="subject">Subject</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="dateIssued">Date issued</option>
+</select>
+</td>
+<td xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_cell_" class="ds-table-cell even selection">
+<select id="aspect_discovery_SimpleSearch_field_filter_relational_operator_1" class="ds-select-field" name="filter_relational_operator_1">
+<option value="contains">Contains</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="equals">Equals</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="authority">ID</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="notcontains">Not Contains</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="notequals">Not Equals</option>
+<option xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" value="notauthority">Not ID</option>
+</select>
+</td>
+<td xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_cell_" class="ds-table-cell odd discovery-filter-input-cell">
+<input id="aspect_discovery_SimpleSearch_field_filter_1" class="ds-text-field discovery-filter-input" name="filter_1" type="text" value="" />
+</td>
+<td id="aspect_discovery_SimpleSearch_cell_filter-controls_1" class="ds-table-cell even filter-controls">
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_discovery_SimpleSearch_field_add-filter_1" class="ds-button-field filter-control filter-add" name="add-filter_1" type="submit" value="Add Filter" />
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_discovery_SimpleSearch_field_remove-filter_1" class="ds-button-field filter-control filter-remove" name="remove-filter_1" type="submit" value="Remove" />
+</td>
+</tr>
+<tr id="aspect_discovery_SimpleSearch_row_filter-controls" class="ds-table-row even apply-filter">
+<td class="ds-table-cell odd" rowspan="1" colspan="4">
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_discovery_SimpleSearch_field_submit_apply_filter" class="ds-button-field discovery-apply-filter-button" name="submit_apply_filter" type="submit" value="Apply" />
+</td>
+</tr>
+</table>
+</div>
+<p id="aspect_discovery_SimpleSearch_p_hidden-fields" class="ds-paragraph hidden">
+<input id="aspect_discovery_SimpleSearch_field_query" class="ds-hidden-field" name="query" type="hidden" value="24CYS205" />
+<input id="aspect_discovery_SimpleSearch_field_scope" class="ds-hidden-field" name="scope" type="hidden" value="/" />
+<input id="aspect_discovery_SimpleSearch_field_rpp" class="ds-hidden-field" name="rpp" type="hidden" value="50" />
+</p>
+</form>
+</div>
+<form id="aspect_discovery_SimpleSearch_div_main-form" class="ds-interactive-div " action="/xmlui/discover" method="post" onsubmit="javascript:tSubmit(this);">
+<p id="aspect_discovery_SimpleSearch_p_hidden-fields" class="ds-paragraph hidden">
+<input id="aspect_discovery_SimpleSearch_field_search-result" class="ds-hidden-field" name="search-result" type="hidden" value="true" />
+<input id="aspect_discovery_SimpleSearch_field_query" class="ds-hidden-field" name="query" type="hidden" value="24CYS205" />
+<input id="aspect_discovery_SimpleSearch_field_current-scope" class="ds-hidden-field" name="current-scope" type="hidden" value="" />
+<input id="aspect_discovery_SimpleSearch_field_rpp" class="ds-hidden-field" name="rpp" type="hidden" value="50" />
+<input id="aspect_discovery_SimpleSearch_field_sort_by" class="ds-hidden-field" name="sort_by" type="hidden" value="score" />
+<input id="aspect_discovery_SimpleSearch_field_order" class="ds-hidden-field" name="order" type="hidden" value="desc" />
+</p>
+</form>
+<h2 class="ds-div-head">Showing 50 out of a total of 1505 results. <span xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://apache.org/cocoon/i18n/2.1" class="searchTime">(0.013 seconds)</span>
+</h2>
+<div class="pagination-masked clearfix top">
+<p class="pagination-info">Now showing items 1-50 of 1505</p>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="pagination-links">
+<li class="current-page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=1&amp;query=24CYS205&amp;group_by=none&amp;etal=0">1</a>
+</li>
+<li class="page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=2&amp;query=24CYS205&amp;group_by=none&amp;etal=0">2</a>
+</li>
+<li class="page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=3&amp;query=24CYS205&amp;group_by=none&amp;etal=0">3</a>
+</li>
+<li class="page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=4&amp;query=24CYS205&amp;group_by=none&amp;etal=0">4</a>
+</li>
+<li>. . .</li>
+<li class="last-page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=31&amp;query=24CYS205&amp;group_by=none&amp;etal=0">31</a>
+</li>
+<li>
+<a class="next-page-link" href="discover?scope=/&amp;rpp=50&amp;page=2&amp;query=24CYS205&amp;group_by=none&amp;etal=0">Next Page</a>
+</li>
+</ul>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_discovery_SimpleSearch_div_search-controls-gear" class="top controls-gear-wrapper">
+<ul id="aspect_discovery_SimpleSearch_list_sort-options" class="ds-simple-list gear-selection">
+<li id="aspect_discovery_SimpleSearch_item_sort-head" class="ds-simple-list-item gear-head first">Sort Options:</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<ul id="aspect_discovery_SimpleSearch_list_sort-selections" class="ds-simple-list">
+<li id="aspect_discovery_SimpleSearch_item_relevance" class="ds-simple-list-item gear-option gear-option-selected">
+<a href="sort_by=score&amp;order=desc">Relevance</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_title_sort" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.title_sort&amp;order=asc">Title Asc</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_title_sort" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.title_sort&amp;order=desc">Title Desc</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_date_issued_dt" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.date.issued_dt&amp;order=asc">Issue Date Asc</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_date_issued_dt" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.date.issued_dt&amp;order=desc">Issue Date Desc</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_rpp-head" class="ds-simple-list-item gear-head">Results Per Page:</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<ul id="aspect_discovery_SimpleSearch_list_rpp-selections" class="ds-simple-list">
+<li id="aspect_discovery_SimpleSearch_item_rpp-5" class="ds-simple-list-item gear-option">
+<a href="rpp=5">5</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-10" class="ds-simple-list-item gear-option">
+<a href="rpp=10">10</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-20" class="ds-simple-list-item gear-option">
+<a href="rpp=20">20</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-40" class="ds-simple-list-item gear-option">
+<a href="rpp=40">40</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-60" class="ds-simple-list-item gear-option">
+<a href="rpp=60">60</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-80" class="ds-simple-list-item gear-option">
+<a href="rpp=80">80</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-100" class="ds-simple-list-item gear-option">
+<a href="rpp=100">100</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="aspect_discovery_SimpleSearch_div_search-results" class="ds-static-div primary">
+<ul class="ds-artifact-list">
+<h3 class="ds-head">Communities or Collections matching your query</h3>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<li class="ds-artifact-item clearfix odd">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/205">4th Semester</a>
+</div>
+</li>
+</ul>
+<h3 class="ds-head">Items matching your query</h3>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7268" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7268">Third Semester - 2022 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7268&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2022</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9641" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9641">Third Semester- 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9641&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7558" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7558">Third Semester - 2023 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7558&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-12</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7680" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7680">Third Semester -Mid Term 2023</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7680&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6424" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6424">Third Semester - Second Assessment Dec 2022</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6424&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2022-12</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6412" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6412">Third Semester - First Assessment Nov 2022</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6412&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2022-11</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9645" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9645">Third Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9645&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9083" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9083">Third Semester  2024 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9083&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-11</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/8539" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/8539">Fourth Semester - June 2024 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F8539&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-06</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6938" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6938">Fourth Semester - First Assessment March 2023</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6938&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-03</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9228" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9228">First Semester - Mid Term 2024</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9228&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-09</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9640" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9640">First Semester - 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9640&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-12</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9369" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9369">Second Semester - April 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9369&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-04</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6943" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6943">Fourth Semester - Second Assessment May 2023</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6943&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-05</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6948" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6948">Fourth Semester - July 2023 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6948&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-07</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9227" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9227">Third Semester -Mid Term 2024</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9227&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-09</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7712" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7712">Third Semester - 2023 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7712&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>BA Communicaiton</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/3679" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/3679">Third Semester - First Assessment Jul  2019</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F3679&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>BA Communicaiton</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2019</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7678" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7678">First Semester - Mid Term  2023</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7678&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-11</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9644" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9644">First Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9644&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6810" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6810">Second Semester  July 2022  Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6810&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2022-07</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9668" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9668">Third Semester- 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9668&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/8625" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/8625">Fourth Semester- Mid-Term March 2024</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F8625&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-03</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6947" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6947">Second Semester - July 2023 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6947&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-07</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/3657" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/3657">Third Semester 2019 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F3657&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>BA Communicaiton</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2019-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6942" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6942">Second Semester - Second Assessment May 2023</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6942&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-05</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9682" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9682">First Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9682&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/5702" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/5702">Second Semester- Mid-Term – May 2022</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F5702&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>M.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2022-05</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/8538" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/8538">Second Semester - June 2024 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F8538&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-06</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9407" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9407">Second Semester- Mid-Term Feb 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9407&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-02</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9071" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9071">Fifth Semester Mid Term 2024</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9071&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-09</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7556" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7556">First Semester - 2023 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7556&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-12</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9642" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9642">Fifth Semester - 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9642&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7689" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7689">Fifth Semester -Mid Term 2023</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7689&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9082" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9082">First Semester  2024 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9082&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-11</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7578" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7578">Fifth Semester 2023 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7578&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-12</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7724" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7724">Third Semester -Mid Term 2023</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7724&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2023-10</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/2949" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/2949">Third Semester - First Assessment Jul / Aug 2018</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F2949&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2018-08</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9408" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9408">Fourth Semester- Mid-Term Feb 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9408&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-02</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9343" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9343">Sixth Semester - April 2025 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9343&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-04</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9646" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9646">Fifth Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9646&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/8628" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/8628">Sixth Semester- Mid-Term April 2024</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F8628&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-04</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/3701" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/3701">Third Semester - First Assessment July 2019</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F3701&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2019-07</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/3736" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/3736">Third Semester - Second Assessment Aug 2019</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F3736&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>Integrated MSc &amp; MA</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2019-08</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9647" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9647">Seventh Semester- Mid-Term 2025</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9647&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2025-08</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/6417" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/6417">First Semester - Second Assessment Dec 2022</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F6417&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2022-12</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/7208" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/7208">First Semester - 2022 Regular ﻿</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F7208&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham;  Coimbatore Campus</span>, <span class="date">2023-01</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix even">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/5922" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/5922">Fourth Semester - Regular April 2022</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F5922&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>MA_ELL</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2022-04</span>)</span>
+</div>
+</div>
+</li>
+<li class="ds-artifact-item clearfix odd">
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" style="width: 80px;" class="thumbnail-wrapper">
+<div class="artifact-preview">
+<a href="/xmlui/handle/123456789/9084" class="image-link">
+<img style="height: 80px;" src="/xmlui/themes/Mirage/images/mime.png" alt="Icon" />
+</a>
+</div>
+</div>
+<div class="artifact-description">
+<div class="artifact-title">
+<a href="/xmlui/handle/123456789/9084">Seventh Semester 2024 Regular</a>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F9084&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</div>
+<div class="artifact-info">
+<span class="author">
+<span>B.Tech</span>
+</span> <span class="publisher-date">(<span class="publisher">Amrita Vishwa Vidyapeetham</span>, <span class="date">2024-11</span>)</span>
+</div>
+</div>
+</li>
+</ul>
+</ul>
+</div>
+<div class="pagination-masked clearfix bottom">
+<p class="pagination-info">Now showing items 1-50 of 1505</p>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="pagination-links">
+<li class="current-page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=1&amp;query=24CYS205&amp;group_by=none&amp;etal=0">1</a>
+</li>
+<li class="page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=2&amp;query=24CYS205&amp;group_by=none&amp;etal=0">2</a>
+</li>
+<li class="page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=3&amp;query=24CYS205&amp;group_by=none&amp;etal=0">3</a>
+</li>
+<li class="page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=4&amp;query=24CYS205&amp;group_by=none&amp;etal=0">4</a>
+</li>
+<li>. . .</li>
+<li class="last-page-link">
+<a href="discover?scope=/&amp;rpp=50&amp;page=31&amp;query=24CYS205&amp;group_by=none&amp;etal=0">31</a>
+</li>
+<li>
+<a class="next-page-link" href="discover?scope=/&amp;rpp=50&amp;page=2&amp;query=24CYS205&amp;group_by=none&amp;etal=0">Next Page</a>
+</li>
+</ul>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_discovery_SimpleSearch_div_search-controls-gear" class="bottom controls-gear-wrapper">
+<ul id="aspect_discovery_SimpleSearch_list_sort-options" class="ds-simple-list gear-selection">
+<li id="aspect_discovery_SimpleSearch_item_sort-head" class="ds-simple-list-item gear-head first">Sort Options:</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<ul id="aspect_discovery_SimpleSearch_list_sort-selections" class="ds-simple-list">
+<li id="aspect_discovery_SimpleSearch_item_relevance" class="ds-simple-list-item gear-option gear-option-selected">
+<a href="sort_by=score&amp;order=desc">Relevance</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_title_sort" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.title_sort&amp;order=asc">Title Asc</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_title_sort" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.title_sort&amp;order=desc">Title Desc</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_date_issued_dt" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.date.issued_dt&amp;order=asc">Issue Date Asc</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_dc_date_issued_dt" class="ds-simple-list-item gear-option">
+<a href="sort_by=dc.date.issued_dt&amp;order=desc">Issue Date Desc</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SimpleSearch_item_rpp-head" class="ds-simple-list-item gear-head">Results Per Page:</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<ul id="aspect_discovery_SimpleSearch_list_rpp-selections" class="ds-simple-list">
+<li id="aspect_discovery_SimpleSearch_item_rpp-5" class="ds-simple-list-item gear-option">
+<a href="rpp=5">5</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-10" class="ds-simple-list-item gear-option">
+<a href="rpp=10">10</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-20" class="ds-simple-list-item gear-option">
+<a href="rpp=20">20</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-40" class="ds-simple-list-item gear-option">
+<a href="rpp=40">40</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-60" class="ds-simple-list-item gear-option">
+<a href="rpp=60">60</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-80" class="ds-simple-list-item gear-option">
+<a href="rpp=80">80</a>
+</li>
+<li id="aspect_discovery_SimpleSearch_item_rpp-100" class="ds-simple-list-item gear-option">
+<a href="rpp=100">100</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="ds-options-wrapper">
+<div id="ds-options">
+<h1 class="ds-option-set-head">Browse</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_browse" class="ds-option-set">
+<ul class="ds-options-list">
+<li>
+<h2 class="ds-sublist-head">All of DSpace</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/community-list">Communities &amp; Collections</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/browse?type=subject">Subjects</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">My Account</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_account" class="ds-option-set">
+<ul class="ds-simple-list">
+<li>
+<a href="/xmlui/login">Login</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<a href="/xmlui/register">Register</a>
+</li>
+</ul>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">Discover</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_Navigation_list_discovery" class="ds-option-set">
+<ul class="ds-options-list">
+<li>
+<h2 class="ds-sublist-head">Author</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=B.Tech">B.Tech (104)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=Integrated+MSc+%26+MA">Integrated MSc &amp; MA (72)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=M.Tech">M.Tech (50)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=BA_ELL">BA_ELL (22)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=BA+Communicaiton">BA Communicaiton (21)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=M.Sc.+Applied+Statistics+and+Data+Analytics">M.Sc. Applied Statistics and Data Analytics (14)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=B+Tech">B Tech (12)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=MA+Communicaiton">MA Communicaiton (12)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=MA_ELL">MA_ELL (11)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=author&amp;filter_relational_operator=equals&amp;filter=MSW">MSW (11)</a>
+</li>
+<li>
+<a href="/xmlui/search-filter?query=24CYS205&amp;scope=/&amp;rpp=50&amp;field=author">... View More</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<h2 class="ds-sublist-head">Subject</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Master+of+Social+Work">Master of Social Work (21)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=5+Year+Integrated+MSc+Physics">5 Year Integrated MSc Physics (14)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Computer+Science+and+Engineering">Computer Science and Engineering (9)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Computer+Sciene+%26+Engineering">Computer Sciene &amp; Engineering (9)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Electronics+and+Communication+Engineering">Electronics and Communication Engineering (9)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=5+Year+Integrated+MSc+Chemistry">5 Year Integrated MSc Chemistry (8)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=VLSI+Design">VLSI Design (8)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Dept.+of+++Embedded+systems">Dept. of   Embedded systems (7)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Manufacturing+Engineering">Manufacturing Engineering (7)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Mechanical+Engineering">Mechanical Engineering (7)</a>
+</li>
+<li>
+<a href="/xmlui/search-filter?query=24CYS205&amp;scope=/&amp;rpp=50&amp;field=subject">... View More</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<h2 class="ds-sublist-head">Date Issued</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2000+TO+2202%5D">2000 - 2202 (1449)</a>
+</li>
+<li>
+<a href="/xmlui/discover?query=24CYS205&amp;scope=/&amp;rpp=50&amp;filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B1000+TO+1999%5D">1000 - 1999 (2)</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div id="ds-footer-wrapper">
+<div id="ds-footer">
+<div id="ds-footer-left">
+<a target="_blank" href="http://www.dspace.org/">DSpace software</a> copyright © 2002-2012  <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>
+</div>
+<div id="ds-footer-right">
+<span class="theme-by">Theme by </span>
+<a id="ds-footer-logo-link" href="http://atmire.com" target="_blank" title="@mire NV">
+<span id="ds-footer-logo"> </span>
+</a>
+</div>
+<div id="ds-footer-links">
+<a href="/xmlui/contact">Contact Us</a> | <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" href="/xmlui/feedback">Send Feedback</a>
+</div>
+<a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="hidden" href="/xmlui/htmlmap"> </a>
+</div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"> </script>
+<script type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/xmlui/static/js/jquery-1.6.2.min.js"> <\/script>')</script>
+<script type="text/javascript" src="/xmlui/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js"> </script>
+<script type="text/javascript" src="/xmlui/loadJQuery.js"> </script>
+<script type="text/javascript" src="/xmlui/static/js/discovery/search-controls.js"> </script>
+<script type="text/javascript" src="/xmlui/static/js/discovery/discovery-results.js"> </script><!--[if lt IE 7 ]>
+<script type="text/javascript" src="/xmlui/themes/Mirage/lib/js/DD_belatedPNG_0.0.8a.js?v=1"> </script>
+<script type="text/javascript">DD_belatedPNG.fix('#ds-header-logo');DD_belatedPNG.fix('#ds-footer-logo');$.each($('img[src$=png]'), function() {DD_belatedPNG.fixPng(this);});</script><![endif]-->
+<script type="text/javascript">
+            runAfterJSImports.execute();
+        </script></body></html>
