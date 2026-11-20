@@ -53,8 +53,9 @@ Because `dspace.amritanet.edu` is hosted on Amrita's private internal intranet, 
 
 ### Binary Releases & Packages
 
-Pre-compiled, ready-to-run releases are available for Windows, Linux, and macOS without requiring any Go installation:
+Pre-compiled, ready-to-run releases and installable APK packages are available:
 
+- **Android App:** [Download APK (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-android.apk) &mdash; *Native Jetpack Compose app with built-in PDF reader*
 - **Windows 64-bit:** [Download ZIP (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-windows-amd64.zip) &mdash; *Includes `run.bat` for one-click launch*
 - **Linux 64-bit:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-linux-amd64.tar.gz)
 - **macOS Apple Silicon:** [Download TAR.GZ (v2.0.0)](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-darwin-arm64.tar.gz)

@@ -93,15 +93,15 @@ The Go terminal interface is built for speed and keyboard efficiency:
 
 ## 📦 Downloads & Releases
 
-Pre-compiled, ready-to-run desktop releases are available for Windows, Linux, and macOS. **No Go runtime required!**
+Pre-compiled, ready-to-install releases are available for Android, Windows, Linux, and macOS.
 
-| Platform | Architecture | Package | Quick Launch |
+| Platform | Architecture / Target | Download Package | Quick Launch / Install |
 |:---|:---:|:---|:---|
+| 📱 **Android** | Universal APK (ARM64 / ARMv7 / x86) | [**`amrita-pyq-v2.0.0-android.apk`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-android.apk) | Download & tap to install |
 | 🪟 **Windows** | x86_64 / amd64 | [**`amrita-pyq-v2.0.0-windows-amd64.zip`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-windows-amd64.zip) | Extract and double-click `run.bat` |
 | 🐧 **Linux** | x86_64 / amd64 | [**`amrita-pyq-v2.0.0-linux-amd64.tar.gz`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-linux-amd64.tar.gz) | `tar -xzf ...` & `./amrita-pyq` |
 | 🍎 **macOS** | Apple Silicon (M1–M4) | [**`amrita-pyq-v2.0.0-darwin-arm64.tar.gz`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-darwin-arm64.tar.gz) | `tar -xzf ...` & `./amrita-pyq` |
 | 🍎 **macOS** | Intel x86_64 | [**`amrita-pyq-v2.0.0-darwin-amd64.tar.gz`**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases/download/v2.0.0/amrita-pyq-v2.0.0-darwin-amd64.tar.gz) | `tar -xzf ...` & `./amrita-pyq` |
-| 📱 **Android** | arm64-v8a / armeabi-v7a / x86_64 | Build from `android/` | `./gradlew assembleDebug` |
 
 👉 View all releases and notes on the [**GitHub Releases Page**](https://github.com/pkpranav-projects/Amrita-PYQ-Fetcher/releases).
 
