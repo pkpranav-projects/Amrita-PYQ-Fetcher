@@ -177,7 +177,7 @@ fun MoreScreen(
         }
 
         Group("About") {
-            SettingRow(Icons.Outlined.Info, "Amrita PYQ Fetcher", "Version ${BuildConfig.VERSION_NAME} · unofficial student tool")
+            SettingRow(Icons.Outlined.Info, "Amrita PYQ Fetcher", "Version ${BuildConfig.VERSION_NAME} · made by P K PRANAV, B.Tech Cyber Security")
         }
         Spacer(Modifier.height(LocalBottomInset.current + 8.dp))
     }
